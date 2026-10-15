@@ -176,3 +176,48 @@ lst10=lst10+lst20+lst30
 print(lst10) # [10, 20, 30, 40, 50, 60, 70, 80, 90]
 lst10.reverse()
 print(lst10) # [90, 80, 70, 60, 50, 40, 30, 20, 10]
+
+print("--------------------------------------------------------------------------------------------")
+print("sort()")
+a = ["a","b","c","d"]
+print(a, type(a), id(a))
+
+b = ["d", "q", "p","e"]
+b.sort()
+print(b, type(b), id(b))
+
+c = [10, 90, 70, 40, 60 ,50, 30]
+c.sort()
+print(c, type(c), id(c))
+
+# d = [100, 55.7898, 55,999, "Pratik", "Thorat", "Python", True]
+# d.sort()
+# print(d, type(d), id(d))
+#  d.sort()
+#  ~~~~~~^^
+# TypeError: '<' not supported between instances of 'str' and 'int'
+# =============================================================================================================================
+# Data must be homogenous, same kind of data should be present in list
+# =============================================================================================================================
+e = [99, 88, 77, 66, 55, 44, 33, 22, 11]
+e.sort()
+print(e)
+e.sort(reverse=True)
+print(e)
+e.sort(reverse=False)
+print(e)
+
+f = ["aaaa", "bbbb", "cccc", "dddd"]
+f.reverse()
+print(f)
+f.sort(reverse=True)
+print(f)
+f.sort()
+print(f)
+
+g = ["Pratik", "Pranjali", "Pranali","Pratiksha"]
+print(g)
+g.sort()
+print(g)
+
+
